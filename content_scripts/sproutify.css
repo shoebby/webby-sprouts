@@ -6,9 +6,10 @@
     left: 100%;
     transform-origin: 0% 50%;
     transform: rotate(var(--a));
-    background-color: rgba(var(--colorR), var(--colorG), var(--colorB), var(--colorA));
+    
     color: rgba(0, 0, 0, 0);
     font-size: 16pt;
+    background-color: rgba(var(--colorR), var(--colorG), var(--colorB), var(--colorA));
 
     animation-name: branchFlow;
     animation-duration: 0s;
@@ -24,6 +25,11 @@
     color: white;
     background-color: white;
 }
+
+.linkFlower {
+    background-color: blue;
+}
+
 @keyframes branchFlow {
     0% {
         width: 200px;

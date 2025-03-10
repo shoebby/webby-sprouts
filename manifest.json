@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Webby Sprouts",
+    "name": "[DEBUG] Webby Sprouts",
     "version": "1.0",
 
     "description": "Generates a tree fractal based on the webpage's HTML structure.",

@@ -43,7 +43,7 @@ var color = [255, 0, 150, 50];
         const newBranch = document.createElement("div");
 
         newBranch.classList.add("branchDiv");
-        newBranch.innerHTML = "<span style='transform:rotate(-90deg);'>" + parentElement + "</span>";
+        //newBranch.innerHTML = "<span style='transform:rotate(-90deg);'>" + parentElement + "</span>";
         parentElement.classList.add("branchElement");
 
         if (parentBranch != null) {
@@ -72,6 +72,11 @@ var color = [255, 0, 150, 50];
             newBulb.style.height = "50px";
             newBulb.style.width = "50px";
             newBulb.style.backgroundColor = "white";
+        }
+
+        if (parentElement.tagName == "A") {
+            newBranch.classList.add('linkFlower');
+            newBranch.innerHTML = "<a href=" + parentElement + " style='width:100%;height:100%;'></a>";
         }
 
         var siblings = parentElement.children;
